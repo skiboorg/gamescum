@@ -1,0 +1,173 @@
+{% load static %}
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 hidden-sm hidden-xs">
+                <div class="top-contacts">
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <ul class="contacts">
+
+
+                    </ul>
+                </div>
+            </div>
+{#            <div class="col-md-5">#}
+{#                <div class="top-language">#}
+{#                    <ul class="list">#}
+{#                        <li class="dropdown">#}
+{#                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{% static 'images/ru-flag.png' %}" alt="selected language">RU</a>#}
+{#                            <ul class="dropdown-menu">#}
+{#                                <li>#}
+{#                                    <a href="#"><img src="{% static 'images/en-flag.png' %}" alt="language">EN</a>#}
+{#                                </li>#}
+{#                                <li>#}
+{#                                    <a href="#"><img src="{% static 'images/ru-flag.png' %}" alt="language">RU</a>#}
+{#                                </li>#}
+{##}
+{#                            </ul>#}
+{#                        </li>#}
+{#                    </ul>#}
+{#                </div>#}
+                    <div class="top-search">
+                            <form>
+                                    <input type="text" name="text">
+                                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                    </div>
+
+                    <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--MAIN MENU WRAP BEGIN-->
+<div class="main-menu-wrap sticky-menu">
+    <div class="container">
+        <a href="{% url 'index' %}" class="custom-logo-link"><img src="{% static 'images/logo.png' %}" alt="logo" class="custom-logo"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar">
+            <div class="collapse navbar-collapse" id="team-menu">
+                <ul class="main-menu nav">
+                     <li class="{{ index_page_active }}"><a href="{% url 'index' %}"><span>ГЛАВНАЯ</span></a></li>
+                    <li class="{{ statistic_page_active }}"><a href="{% url 'statistic' %}"><span>СТАТИСТИКА</span></a></li>
+
+                    <li><a href="news.html"><span>МЕРОПРИЯТИЯ</span></a></li>
+                    <li><a href="news-single.html"><span>ОТРЯДЫ</span></a></li>
+                    <li><a href="store.html"><span>BLACKMARKET</span></a></li>
+
+
+                    <li class="cart full">
+                        <a href="#cart">
+                            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        </a>
+
+                        <div style="height: 442px;
+    overflow: scroll;
+    overflow-x: hidden;" class="cart-drop">
+                            <div style=" background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #3B3C3E;
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 10px 7px 5px;">
+                              <table class="ct">
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="delete"><a href="#"><i class="fa fa-close" aria-hidden="true"></i></a></td>
+                                    <td class="info">
+                                        <img class="product-image" src="images/common/cart-product.jpg" alt="product-image">
+                                        <em>Men's T-Shirt<br><em class="price">1 x £ 60</em></em>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                            <div class="wrap">
+                                <div class="total-text">Subtotal: </div>
+                                <div class="total-digit">£ 120</div>
+                            </div>
+                            <div class="wrap btn-wrap">
+                                <a href="cart.html" class="btn view">View cart</a>
+                                <a href="checkout.html" class="btn check">checkout cart</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--MAIN MENU WRAP END-->
