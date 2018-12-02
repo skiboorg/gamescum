@@ -3,7 +3,8 @@
 
 {% block content %}
 
-   <div class="msp_post_slider" id="amateurs-slider">
+
+<div class="msp_post_slider" id="amateurs-slider">
 
     <div class="owl-carousel owl-theme" role="listbox">
 
@@ -11,10 +12,11 @@
             <div class="slider-caption">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-sm-8">
+                        <div class="col-md-8 col-sm-8 home_page_slider_div">
                             <div>
                              <h1 class="title">SCUM</h1>
                             <div class="sub-title">
+
                                Смертная казнь или 15 минут славы…? - девиз реалити-шоу SCUM. Некогда обитамый остров превратился в съемочную площадку самого жёсткого , но с бешенными рейтингами шоу.
                             </div>
                             </div>
@@ -22,20 +24,17 @@
                             <a href="/" class="btn">
                                 ПОДРОБНЕЕ О ИГРЕ
                             </a>
-                             <a href="/" class="btn">
-                                ПОДРОБНЕЕ О ИГРЕ
+                             <a href="/" class="btn btn-danger">
+                                КУПИТЬ В STEAM
                             </a>
                              <a href="/" class="btn">
-                                ПОДРОБНЕЕ О ИГРЕ
+                                ГРУППА В STEAM
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 
     <!-- Controls -->
@@ -50,16 +49,15 @@
 
     <div class="progress-line"><div class="bar"></div></div>
 </div>
-  <!--MAIN AMATURE SLIDER END-->
 
-    <!--MAIN BREAKING NEWS BEGIN-->
+
 <div class="main-breaking-news">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-3 col-xs-12">
-                <div class="break-title"><span>Breaking news</span></div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="break-title"><span>НОВОСТИ ПРОЕКТА</span></div>
             </div>
-            <div class="col-md-10 col-sm-9 col-xs-12">
+            <div class="col-md-9 col-sm-9 col-xs-12">
                 <div id="main-breaking-list" class="carousel slide main-breaking-list" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
@@ -91,9 +89,35 @@
         </div>
     </div>
 </div>
-<!--MAIN BREAKING NEWS END-->
 
-    <!--MAIN MATCH SHEDULE BEGIN-->
+<section class="success-story-cybersport" style=" background: url({% static 'images/home_bg1.png' %}) 0% 50% no-repeat #f7f7f7;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                                     <h4>ИГРОВОЙ СЕРВЕР <br>SCUM</h4>
+                <p>Мы приглашаем игроков для совместной игры в Scum. В нашем дискорде всегда можно найти новых друзей для совместной охоты, а также новых врагов :). На просторах нашего сервера мы проводим различные ивенты, а в группе ВК конкурсы с ценными внутриигровыми призами.</p>
+
+<p>Наша задача - обеспечить приятное времяпровождение в игре через взаимодействие с приятными людьми.</p>
+
+<p>Наша структура - как серьёзные геймеры, нацеленные только на достижения в игре, так и весёлые игроки, которые пришли для получения удовольствия от игры с друзьями, напарниками и приятными людьми - участниками сообщества.</p>
+
+
+            </div>
+
+            <div class="col-md-5">
+                <div class="wrap position-relative">
+                    <div class="cybersport-slogan">
+                        <div class="title">Стремимся</div>
+                        <div class="big-title">стать лучше</div>
+                        <p>Мы всегда открыты для Ваших предложений и вопросов, связаться с нами можно в любой момент в <a href="http://discord.me/gamescum">Дискорд-сервере</a> или группы ВК.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <div class="main-match-shedule amateurs-match-shedule">
     <div class="container">
         <div class="row">
@@ -268,10 +292,8 @@
         </div>
     </div>
 </div>
-<!--MAIN MATCH SHEDULE END-->
 
 
-    <!--MAIN CLUB STAFF BEGIN-->
 <div class="main-club-stuff amateurs-club-stuff">
     <div class="container">
         <div class="row">
@@ -606,10 +628,8 @@
         </div>
     </div>
 </div>
-<!--MAIN CLUB STAFF END-->
 
 
-    <!--SUCCESS STORY BEGIN-->
 <div class="success-story amateurs-success-story">
     <div class="container">
         <div class="row">
@@ -641,9 +661,8 @@
         </div>
     </div>
 </div>
-<!--SUCCESS STORY END-->
 
-    <!--AMATEURS AWARD BOX BEGIN-->
+
 <div class="amateurs-award-box">
     <div class="container">
         <div class="row">
@@ -685,9 +704,8 @@
         </div>
     </div>
 </div>
-<!--AMATEURS AWARD BOX END-->
 
-    <!--MAIN CLUB GALLERY BEGIN-->
+
 <section class="main-club-gallery">
     <div class="container">
         <div class="row">
@@ -778,9 +796,8 @@
         </div>
     </div>
 </section>
-<!--MAIN CLUB GALLERY END-->
 
-    <!--SPONSOR BOX BEGIN-->
+
 <div class="am-sponsor-box">
         <div class="container">
             <div class="row">
@@ -802,9 +819,8 @@
             </div>
         </div>
     </div>
-<!--SPONSOR BOX END-->
 
-    <!--AMATEURS NEWS LIST BEGIN-->
+
 <div class="amateurs-news-list">
     <div class="container">
         <div class="row">
@@ -907,6 +923,6 @@
         </div>
     </div>
 </div>
-<!--AMATEURS NEWS LIST END-->
+
 
 {% endblock %}
