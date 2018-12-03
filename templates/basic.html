@@ -12,24 +12,33 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="{% static 'css/bootstrap.css'%} " rel="stylesheet" type="text/css" />
+     <link href="{% static 'css/bootstrap.css'%} " rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css'%} " rel="stylesheet">
+    <link href="{% static 'css/simple-line-icons.css'%} " rel="stylesheet">
+    <link href="{% static 'css/magnific-popup.css'%} " rel="stylesheet">
+    <link href="{% static 'css/slick.css'%} " rel="stylesheet">
+    <!-- Template CSS-->
+    <link href="{% static 'css/style-basketball-dark.css'%} " rel="stylesheet">
+    <!-- Custom CSS-->
+    <link href="{% static 'css/custom.css'%} " rel="stylesheet">
 
 
-    <link rel="stylesheet" href="{% static 'css/font-awesome.css'%}">
-    <link href="{% static 'css/preloader-default.css'%}" rel="stylesheet" type="text/css" />
-    <link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" />
-    <link href="{% static 'css/scum.css'%} " rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-	<div class="preloader-wrapper" id="preloader">
-    <div class="motion-line dark-big"></div>
-    <div class="motion-line yellow-big"></div>
-    <div class="motion-line dark-small"></div>
-    <div class="motion-line yellow-normal"></div>
-    <div class="motion-line yellow-small1"></div>
-    <div class="motion-line yellow-small2"></div>
-</div>
+ <div class="site-wrapper clearfix">
+        <div class="site-overlay"></div>
+        <!-- Header
+		================================================== -->
+        <!-- Header Mobile -->
+        <div class="header-mobile clearfix" id="header-mobile">
+            <div class="header-mobile__logo">
+                <a href="index.html"><img src="assets/images/logo.png" srcset="assets/images/logo@2x.png 2x" alt="Alchemists" class="header-mobile__logo-img"></a>
+            </div>
+            <div class="header-mobile__inner"><a id="header-mobile__toggle" class="burger-menu-icon"><span class="burger-menu-icon__line"></span></a> <span class="header-mobile__search-icon" id="header-mobile__search-icon"></span></div>
+        </div>
+
 
 
 
@@ -40,67 +49,16 @@
 {% endblock %}
 
 {% include 'footer.html' %}
+ </div>
 
-<script type="text/javascript" src="{% static 'js/jquery.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/jquery-ui.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/jquery.sticky.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/jquery.jcarousel.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/jcarousel.connected-carousels.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/owl.carousel.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/progressbar.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/jquery.bracket.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/chartist.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/Chart.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/fancySelect.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/isotope.pkgd.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/imagesloaded.pkgd.js'%}"></script>
-
-<script type="text/javascript" src="{% static 'js/jquery.team-coundown.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/matches-slider.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/header.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/matches_broadcast_listing.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/news-line.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/match_galery.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/main-club-gallery.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/product-slider.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/circle-bar.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/standings.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/shop-price-filter.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/timeseries.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/radar.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/slider.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/preloader.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/diagram.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/bi-polar-diagram.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/label-placement-diagram.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/donut-chart.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/animate-donut.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/advanced-smil.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/svg-path.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/pick-circle.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/horizontal-bar.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/gauge-chart.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/stacked-bar.js'%}"></script>
-
-<script type="text/javascript" src="{% static 'js/chartist-plugin-legend.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/chartist-plugin-threshold.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/chartist-plugin-pointlabels.js'%}"></script>
-
-<script type="text/javascript" src="{% static 'js/treshold.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/visible.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/anchor.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/landing_carousel.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/landing_sport_standings.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/twitterslider.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/champions.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/landing_mainnews_slider.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/carousel.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/video_slider.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/footer_slides.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/player_test.js'%}"></script>
-
-<script type="text/javascript" src="{% static 'js/main.js'%}"></script>
+  <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.bundle.js'%}"></script>
+    <script src="{% static 'js/core.js'%}"></script>
+    <!-- Vendor JS -->
+    <script src="{% static 'js/jquery.twitter.js'%}"></script>
+    <!-- Template JS -->
+    <script src="{% static 'js/init.js'%}"></script>
+    <script src="{% static 'js/custom.js'%}"></script>
     
     
 
